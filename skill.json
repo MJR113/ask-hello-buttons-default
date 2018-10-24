@@ -1,0 +1,58 @@
+{
+    "manifest": {
+        "publishingInformation": {
+            "locales": {
+                "en-US": {
+                    "summary": "Have fun changing the colors of Echo Buttons",
+                    "examplePhrases": [
+                        "Alexa, launch awesome color changing buttons",
+                        "Alexa, load awesome color changing buttons",
+                        "Alexa, begin awesome color changing buttons"
+                    ],
+                    "keywords": [
+                        "Alexa Gadgets API",
+                        "Echo Buttons"
+                    ],
+                    "description": "This is an example skill to show how to use the Alexa Gadgets API",
+                    "name": "Awesome Color Changing Buttons"
+                }
+            },
+            "isAvailableWorldwide": true,
+            "testingInstructions": "Open the skill and press connected Echo Buttons to see lights animate. Thank you for testing this skill.",
+            "category": "GAMES",
+            "distributionCountries": [
+                
+            ],
+            "gadgetSupport":{
+                "requirement":"REQUIRED",
+                "numPlayersMin": 1,
+                "numPlayersMax": 1,
+                "minGadgetButtons": 1,
+                "maxGadgetButtons": 4
+            }
+        },
+        "apis": {
+            "custom": {
+                "endpoint": {
+                    "sourceDir": "lambda/custom"
+                },
+                "interfaces": [
+                    {
+                        "type": "GAME_ENGINE"
+                    },
+                    {
+                        "type": "GADGET_CONTROLLER"
+                    }
+                ]
+            }
+        },
+        "manifestVersion": "1.0",
+        "privacyAndCompliance": {
+            "allowsPurchases": false,
+            "usesPersonalInfo": false,
+            "isChildDirected": false,
+            "isExportCompliant": true,
+            "containsAds": false
+        }
+    }
+}
